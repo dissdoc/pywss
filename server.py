@@ -6,7 +6,7 @@ from json import dumps
 
 def data(): 
     cache = {
-        'id': f'3fa85f64-{str(randint(1000, 9999))}-{str(randint(1000, 9999))}-b3fc-2c963f66afa6',
+        'id': f'3fa85f64-5717-4562-b3fc-2c963f66afa6',
         'name': { 
             'az': 'Bəyannamənin verilmə müddəti başa çatır',
             'en': 'The deadline for submissions of the declaration',
