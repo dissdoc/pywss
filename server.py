@@ -29,7 +29,7 @@ def data():
         'canNotClose': 'false',
         'readRequired': 'true',
         'alwaysOnTop': choice([True, False]),
-        'read': 'false'
+        'read': False
     }
 
     size = randint(1, 5)
