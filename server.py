@@ -5,7 +5,7 @@ from random import choice, randint
 from json import dumps
 
 def data(): 
-    return {
+    cache = {
         'id': f'3fa85f64-{str(randint(1000, 9999))}-{str(randint(1000, 9999))}-b3fc-2c963f66afa6',
         'name': { 
             'az': 'Bəyannamənin verilmə müddəti başa çatır',
@@ -31,6 +31,13 @@ def data():
         'alwaysOnTop': choice([True, False]),
         'read': 'true'
     }
+
+    size = randint(1, 5)
+    notifications = []
+    for s in range(0, size):
+        notifications.append(cache)
+
+    return notifications
 
 async def echo(websocket, path):
     greeting = dumps(data())
