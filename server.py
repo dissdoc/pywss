@@ -26,8 +26,8 @@ def data():
         'iconType': 'info',
         'notificationTs': '2019-10-14T10:15:09.802Z',
         'notificationType': 'currentLiability',
-        'canNotClose': 'false',
-        'readRequired': 'true',
+        'canNotClose': False,
+        'readRequired': True,
         'alwaysOnTop': choice([True, False]),
         'read': False
     }
