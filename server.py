@@ -40,8 +40,10 @@ def data():
     return notifications
 
 async def echo(websocket, path):
-    greeting = dumps(data())
-    await websocket.send(greeting)
+    while True:
+        greeting = dumps(data())
+        await websocket.send(greeting)
+        await asyncio.sleep(5)
 
 
 asyncio.get_event_loop().run_until_complete(
